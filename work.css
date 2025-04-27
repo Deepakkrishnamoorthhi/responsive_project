@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: orange;
+    
+
+}
+.head h1{
+    margin-left: 20px;
+    transition: 4s;
+}
+.head h1:hover{
+    color: azure;
+    transform: translateX(-200px);
+    transition: 4s;
+
+}
+.head nav ul li{
+    padding: 15px;
+    list-style-type: none;
+}
+.head nav ul{
+    display: flex;
+}
+.main{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    color: white;
+    margin-top: 100px;
+}
+.sub1{
+    width: 50%;
+    text-align: center;
+}
+.sub1 h1{
+    padding: 10px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.sub1 h2{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub1 span{
+    font-weight: 500;
+    color: burlywood;
+}
+.sub1 h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.img{
+    width: 50%;
+    
+}
+.img img{
+    
+    right: 30px;
+    top: 20px;
+    animation: car ease-in-out 2s;
+}
+@keyframes car{
+    0%{
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (max-width:988px) {
+   .main{
+    width: 100%;
+    text-align: center;
+   }
+   .sub1{
+    text-align: center;
+    width: 100%;
+   }
+   .img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -5px;
+    z-index: -1;
+    margin-left:20% ;
+   }
+   img{
+    width: 300px;
+    height: 300px;
+    
+   }
+   
+}
+@media screen and (max-width:530px) {
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    .sub1 h1{
+        font-size: 40px;
+    }
+    .sub1 h3{
+        font-size: 20px;
+    }
+    
+    
+}
